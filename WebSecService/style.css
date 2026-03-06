@@ -1,0 +1,144 @@
+
+
+h1{
+    
+    color: rgba(206, 177, 235,1);
+    text-decoration: underline dashed;
+    font-size: 80% ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:700 ;
+    font-style: oblique;
+    font-variant: small-caps;
+    border: solid gray 9px;
+    padding: 40px;
+    margin: 40px;
+}
+
+
+.cls0{
+    font-weight: 700;
+    color: brown;
+}
+
+ul{
+    color: red;
+}
+
+#id0{
+    color: rgb(133, 118, 99);
+}
+
+
+body{
+    font-size: 40px;
+    background: rgb(245, 245, 242);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdXQh5UkM6TCGvh0rFsndtP9jeylQrS2RMxYS7c7Ta6jf8LAyTHmBb&usqp=CAE&s);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a:link {
+    color: green;
+    text-decoration: none ;
+    display: inline-block;
+}
+
+a:visited{
+    color: rgb(107, 22, 22);
+}
+
+a:hover{
+    color:cadetblue;
+    font-size: 21px;
+}
+
+a:active{
+    color: brown;
+    text-decoration: underline;
+}
+
+code{
+    display: none;
+    visibility: hidden;
+}
+.overflow{
+    border: double rgb(227, 115, 115) 8px;
+    width:300px;
+    height: 200px;
+    overflow: auto;
+}
+
+
+.contaner{
+    background-color: blueviolet;
+    padding: 20px;
+    width: 700px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    gap: 10px;
+}
+
+.header{
+    grid-area: header;
+    background-color: aquamarine;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.content{
+    grid-area: content;
+    background-color: rgb(115, 197, 169);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: burlywood;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: beige;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    gap: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.flex-item {
+    background: yellow;
+    padding: 20px;
+    flex: 1; 
+    min-width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 200px;
+    background-color: lightblue;
+}
+

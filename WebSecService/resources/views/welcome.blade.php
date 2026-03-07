@@ -1,4 +1,5 @@
-body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<body>
 <nav class="navbar navbar-expand-sm bg-light">
 <div class="container-fluid">
 <ul class="navbar-nav">

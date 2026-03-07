@@ -42,3 +42,26 @@ return view('multable', compact('j'));
 Route::get('/jquery', function() {
     return view('jquery-example'); 
 });
+
+
+// use App\Http\Controllers\Web\ProductsController;
+
+// Route::get('products', [ProductsController::class, 'list'])->name('products_list');
+
+use App\Http\Controllers\Web\ProductsController;
+
+Route::get('products', [ProductsController::class, 'list'])->name('products_list');
+
+
+// صفحة إضافة أو تعديل المنتج
+Route::get('products/edit/{product?}', [ProductsController::class, 'edit'])
+    ->name('products_edit');
+
+// حفظ بيانات المنتج (Add/Update)
+Route::post('products/save/{product?}', [ProductsController::class, 'save'])
+    ->name('products_save');
+
+
+
+// Delete Product
+Route::get('products/delete/{product}', [ProductsController::class, 'delete'])->name('products_delete');
